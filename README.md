@@ -1,6 +1,6 @@
 # 播客节目笔记生成器
 
-基于 Cursor AI 的 skill，从播客转录稿 PDF 生成节目笔记（show notes）。面向任何播客制作者，可自定义模板和风格。
+基于 Agent Skills 规范的 skill，从播客转录稿 PDF 生成节目笔记（show notes）。面向任何播客制作者，可自定义模板和风格。支持 Cursor、Claude Code、Codex 等 AI 开发工具。
 
 ## 功能
 
@@ -12,10 +12,22 @@
 
 ## 使用方法
 
-1. 在 Cursor 中安装 skill（将 `.cursor/skills/podcast-shownotes/` 放到 Cursor 的 skills 目录）
+1. 安装 skill（见下方多平台说明）
 2. 提供带时间戳的完整播客转录稿 PDF
 3. 按交互流程选择：标题焦点、内容侧重、写作风格
 4. 将生成的节目笔记复制到播客平台
+
+## 多平台支持
+
+本 skill 遵循 [Agent Skills](https://agentskills.io/) 开放规范，可在以下平台使用：
+
+| 平台 | 安装方式 |
+|------|----------|
+| **Cursor** | 复制 `.cursor/skills/podcast-shownotes/` 到项目内对应路径 |
+| **Claude Code** | 复制到 `.claude/skills/podcast-shownotes/`（项目级）或 `~/.claude/skills/podcast-shownotes/`（个人级） |
+| **Codex** | 若已安装 skill-installer：`install-skill-from-github.py --repo fanyu-meng/podcast-shownotes-generator --path .cursor/skills/podcast-shownotes`；或手动复制到 `~/.codex/skills/podcast-shownotes/` |
+
+安装时需复制整个 skill 目录（含 SKILL.md、style-guide.md、examples.md）。`template.md` 在项目根目录，可按需引用或自定义。
 
 ## 项目结构
 
