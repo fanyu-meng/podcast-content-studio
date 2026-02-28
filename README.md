@@ -10,12 +10,22 @@
 - **时间戳** — 按话题整理，适合小宇宙 / 苹果播客 / Spotify
 - **人味写作** — 避免 AI 腔，多用具体事实、金句和主观感受
 
-## 使用方法
+## 快速上手
 
-1. 安装 skill（见下方多平台说明）
-2. 提供带时间戳的完整播客转录稿 PDF
-3. 按交互流程选择：标题焦点、内容侧重、写作风格
-4. 将生成的节目笔记复制到播客平台
+1. 安装 skill（见下方多平台支持）。
+2. 上传播客转录稿 PDF（建议带时间戳）。
+3. 对 AI 说一句简单指令即可，例如：
+
+```text
+请根据这份转录稿生成本期 show notes。
+```
+
+4. 按交互提示完成选择，拿到最终文案后复制到平台发布。
+
+## 示例
+
+- 完整生成示例：`samples/generated/EP19_shownotes.md`
+- 参考示例：`samples/references/example1.md`、`samples/references/example2.md`、`samples/references/example3.md`
 
 ## 多平台支持
 
