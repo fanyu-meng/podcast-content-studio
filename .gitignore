@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Env / Secrets (if any future scripts use them)
+.env
+.env.local
+*.key
