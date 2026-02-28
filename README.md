@@ -1,6 +1,6 @@
 # 播客节目笔记生成器
 
-基于 Cursor AI 的 skill，从播客转录稿 PDF 生成节目笔记（show notes）。为 **破壁圆桌** 设计——一档来自慕尼黑、与不同行业优秀华人对话的播客。
+基于 Cursor AI 的 skill，从播客转录稿 PDF 生成节目笔记（show notes）。面向任何播客制作者，可自定义模板和风格。
 
 ## 功能
 
@@ -31,7 +31,9 @@
 └── EP19_shownotes.md     # 生成示例
 ```
 
-## 破壁圆桌 — 收听
+## 示例播客
+
+本项目示例来自 **破壁圆桌**，一档来自慕尼黑的华人对话播客。欢迎收听：
 
 - [小宇宙](https://www.xiaoyuzhoufm.com/podcast/67cdacc32deb5237c648049f)
 - [苹果播客](https://podcasts.apple.com/de/podcast/%E7%A0%B4%E5%A3%81%E5%9C%86%E6%A1%8C/id1719475456?l=en-GB)
