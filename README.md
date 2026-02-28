@@ -1,4 +1,4 @@
-# 播客节目笔记生成器
+# 播客Shownotes生成器
 
 基于 Agent Skills 规范的 skill，从播客转录稿 PDF 生成节目笔记（show notes）。面向任何播客制作者，可自定义模板和风格。支持 Cursor、Claude Code、Codex 等 AI 开发工具。
 
