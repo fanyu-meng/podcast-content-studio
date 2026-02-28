@@ -37,10 +37,14 @@
 │   ├── style-guide.md    # 写作规则与禁用词
 │   └── examples.md       # 参考示例
 ├── template.md           # 输出模板
-├── example1.md           # 示例输出（EP15）
-├── example2.md           # 示例输出
-├── example3.md           # 示例输出
-└── EP19_shownotes.md     # 生成示例
+└── samples/
+    ├── README.md         # 示例目录说明
+    ├── generated/
+    │   └── EP19_shownotes.md  # 完整生成示例
+    └── references/
+        ├── example1.md   # 历史参考示例（EP15）
+        ├── example2.md   # 历史参考示例（嘉宾介绍）
+        └── example3.md   # 历史参考示例（EP13）
 ```
 
 ## 示例播客

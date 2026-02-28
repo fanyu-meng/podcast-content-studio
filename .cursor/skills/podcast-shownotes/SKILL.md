@@ -115,7 +115,7 @@ Rules:
 - Each timestamp on its own line, with a **blank line** between each timestamp
 - Each timestamp should read like a compelling mini-headline, not a generic summary
 - Include names, numbers, quotes, and use punctuation (？！) to convey emotion
-- The output must be **plain text** that can be directly copy-pasted into 小宇宙 / Apple Podcasts / Spotify without any markdown rendering
+- Timestamp lines must stay as plain text (no bullets, no numbering, no extra markdown symbols) so they can be directly copy-pasted into 小宇宙 / Apple Podcasts / Spotify
 
 ### Step 8: Assemble and output
 
@@ -123,7 +123,7 @@ Output the final show notes in the exact template format below.
 
 ## Output Template
 
-Output format: `.md` (Markdown). Section headers (书名号 content) must be **bold** using `**`. The user copies from rendered markdown preview to paste into podcast platforms, which preserves bold formatting.
+Output format: `.md` (Markdown). Section headers (书名号 content) must be **bold** using `**`; all section content (especially timestamps) should remain plain text without markdown list syntax.
 
 ```
 EP{N}：{标题}
