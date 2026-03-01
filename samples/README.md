@@ -1,10 +1,16 @@
-# Samples 目录说明
+# Samples
 
-- `generated/`：完整生成结果示例（可直接查看最终格式）
-- `references/`：历史参考片段与示例草稿（用于风格参考）
+## Show Notes
 
-当前示例：
-- `generated/EP19_shownotes.md`
-- `references/example1.md`
-- `references/example2.md`
-- `references/example3.md`
+- `generated/EP19_shownotes.md` — AI 生成的完整 show notes 示例
+
+## 参考示例
+
+- `references/example1.md` — EP15（脱口秀主题）
+- `references/example2.md` — 嘉宾介绍（AI 创业主题）
+- `references/example3.md` — EP13（脱口秀主题）
+
+## 小红书文案
+
+- `generated/` — AI 生成的小红书文案示例（生成后存放于此）
+- 内置示例参见 `.cursor/skills/xiaohongshu-copywriting/examples.md`
