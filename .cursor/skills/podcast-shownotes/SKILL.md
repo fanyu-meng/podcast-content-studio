@@ -103,19 +103,48 @@ Include:
 
 ### Step 7: Create timestamps
 
-Go through the transcript chronologically. Mark timestamps at:
-- Topic transition points
-- Climax moments (big laughs, debates, revelations)
-- Memorable quotes or stories
+#### Step 7a: Identify major topics
 
-Format each as: `MM:SS 标题关键词：具体描述内容`
+Go through the transcript chronologically and identify the **major discussion topics** — not individual sub-points, quotes, or anecdotes within a topic.
+
+A "major topic" is a coherent segment of conversation that usually lasts 3–8 minutes, where the discussion revolves around one theme before transitioning to the next. For example, "如何跟老板建立关系" is one major topic; the sub-points within it ("partner关系", "怕老板", "角色逆转", "提供价值的时机") should NOT each get their own timestamp.
+
+#### Step 7b: Locate exact timestamps
+
+For each major topic, find its **start time** in the transcript:
+- The time **must** come from an actual `发言人X MM:SS` (or `发言人X HH:MM:SS`) marker in the transcript — pick the speaker-turn marker closest to where that topic begins
+- **Never** estimate, interpolate, or round timestamps — only use times that literally appear in the transcript text
+- When in doubt, prefer the speaker-turn marker immediately before the topic begins over one after
+
+#### Step 7c: Write timestamp descriptions
+
+For each topic timestamp, write a compelling mini-headline:
+- Extract the most specific, surprising, or vivid detail from that topic segment as the hook
+- A single timestamp description can reference multiple highlights within the topic (use dashes or semicolons)
+- Follow all writing style rules in [style-guide.md](style-guide.md)
+
+Format: `MM:SS 标题关键词：具体描述内容`
 
 Rules:
 - Use Chinese colon `：` to separate the topic label from the description
 - Each timestamp on its own line, with a **blank line** between each timestamp
-- Each timestamp should read like a compelling mini-headline, not a generic summary
 - Include names, numbers, quotes, and use punctuation (？！) to convey emotion
 - Timestamp lines must stay as plain text (no bullets, no numbering, no extra markdown symbols) so they can be directly copy-pasted into 小宇宙 / Apple Podcasts / Spotify
+- For episodes longer than 60 minutes, use `H:MM:SS` format instead of `MM:SS`
+
+#### Step 7d: Verify
+
+Go back to the transcript and verify **every** timestamp:
+- Confirm that the text within 30 seconds of the timestamp actually corresponds to the described topic
+- If there is a mismatch, replace the timestamp with the correct speaker-turn marker from the transcript
+- Do not skip this step
+
+#### Density guide (topic-level, not point-level)
+
+- Under 30 min: 5–8 timestamps
+- 30–60 min: 8–12 timestamps
+- Over 60 min: 10–15 timestamps
+- Minimum gap between adjacent timestamps: 2 minutes
 
 ### Step 8: Assemble and output
 
@@ -140,7 +169,7 @@ EP{N}：{标题}
 
 **『时间戳』**
 
-{MM:SS 标题关键词：具体描述}
+{MM:SS 标题关键词：具体描述}（超过60分钟的节目用 H:MM:SS）
 
 {MM:SS 标题关键词：具体描述}
 
