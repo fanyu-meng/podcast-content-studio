@@ -49,8 +49,9 @@
 
 ## 示例
 
-- 完整生成示例（show notes）：`samples/generated/EP19_shownotes.md`
-- 参考示例：`samples/references/example1.md`、`samples/references/example2.md`、`samples/references/example3.md`
+- Show notes 生成示例：`output/shownotes/EP19_shownotes.md`
+- 小红书文案生成示例：`output/xiaohongshu/EP19_xiaohongshu_all.md`
+- 历史风格参考：`references/`
 - 小红书文案示例（内置于 skill）：`.cursor/skills/xiaohongshu-copywriting/examples.md`
 
 ## 多平台支持
@@ -63,7 +64,7 @@
 | **Claude Code** | 复制到 `.claude/skills/` 下对应目录（项目级）或 `~/.claude/skills/` 下（个人级） |
 | **Codex** | 手动复制到 `~/.codex/skills/` 下对应目录 |
 
-每个 skill 目录含 SKILL.md、style-guide.md、examples.md。根目录的 `template*.md` 可按需引用或自定义。
+每个 skill 目录含 SKILL.md、style-guide.md、examples.md。模板在 `templates/` 下按类型分目录。
 
 ## 项目结构
 
@@ -77,17 +78,18 @@
 │       ├── SKILL.md
 │       ├── style-guide.md
 │       └── examples.md
-├── template.md                         # Show Notes 输出模板
-├── template-text-post.md               # 小红书纯文字帖模板
-├── template-multi-angle.md             # 小红书多角度文案模板
-├── template-carousel.md                # 小红书图文笔记模板
-└── samples/
-    ├── generated/
-    │   └── EP19_shownotes.md           # 完整生成示例
-    └── references/
-        ├── example1.md
-        ├── example2.md
-        └── example3.md
+├── transcripts/                        # 转录稿 PDF
+├── templates/
+│   ├── shownotes/
+│   │   └── template.md                # Show Notes 输出模板
+│   └── xiaohongshu/
+│       ├── text-post.md               # 纯文字帖模板
+│       ├── multi-angle.md             # 多角度文案模板
+│       └── carousel.md                # 图文笔记模板
+├── output/                             # 生成结果
+│   ├── shownotes/                     # Show Notes 输出
+│   └── xiaohongshu/                   # 小红书文案输出
+└── references/                         # 历史风格参考
 ```
 
 ## 示例播客
