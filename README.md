@@ -24,7 +24,25 @@
 - **Hook-first** — 前 2 行必须抓人，针对小红书信息流优化
 - **Hashtag 生成** — 自动生成通用 + 内容相关的话题标签
 
-## 快速上手
+## 通用 AI 对话版本
+
+如果你不使用 Cursor、Claude Code 等开发工具，只是想在 **ChatGPT、Claude、Gemini、DeepSeek、Kimi 等通用 AI 对话产品** 中使用，可以直接使用通用版 Prompt：
+
+📄 **[UNIVERSAL_PROMPT.md](UNIVERSAL_PROMPT.md)** - 适用于所有 AI 对话产品的完整 Prompt
+
+**使用方法：**
+1. 复制 `UNIVERSAL_PROMPT.md` 的完整内容
+2. 粘贴到你的 AI Chat（ChatGPT、Claude、Gemini 等）
+3. 提供播客转录稿（文本粘贴、PDF 上传、或其他格式）
+4. AI 会引导你完成 Show Notes 生成
+
+**特点：**
+- ✅ 去掉了对特定工具的依赖（AskQuestion tool 等）
+- ✅ 支持任何格式的输入（不限于 PDF）
+- ✅ 整合成单个完整文档，无需额外文件
+- ✅ 保留所有风格指南和示例
+
+## 快速上手（开发工具版本）
 
 1. 安装 skill（见下方多平台支持）。
 2. 上传播客转录稿 PDF（建议带时间戳）。
