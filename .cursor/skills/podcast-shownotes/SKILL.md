@@ -152,7 +152,9 @@ Output the final show notes in the exact template format below.
 
 ## Output Template
 
-Output format: `.md` (Markdown). Section headers (书名号 content) must be **bold** using `**`; all section content (especially timestamps) should remain plain text without markdown list syntax.
+Output format: `.md` (Markdown). **Output directory: `output/shownotes/`** — always save the file into this folder relative to the workspace root.
+
+Section headers (书名号 content) must be **bold** using `**`; all section content (especially timestamps) should remain plain text without markdown list syntax.
 
 ```
 EP{N}：{标题}

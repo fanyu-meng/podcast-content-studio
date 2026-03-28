@@ -191,6 +191,8 @@ Read [style-guide.md](style-guide.md) for Hook writing techniques and formatting
 
 **输出格式：** `.md`（Markdown）
 
+**输出目录：** `output/xiaohongshu/` — 始终将文件保存到此文件夹（相对于 workspace 根目录）。
+
 **输出文件命名：** `EP{N}_xiaohongshu_{type}.md`
 - type = `text` / `multi` / `carousel` / `all`
 
