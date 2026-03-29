@@ -12,3 +12,7 @@ Thumbs.db
 .env
 .env.local
 *.key
+
+# Generated interview outlines
+output/interview-outlines/*
+!output/interview-outlines/.gitkeep

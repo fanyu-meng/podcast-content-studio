@@ -75,7 +75,7 @@
 
 ## 示例
 
-- 采访大纲：`output/interview-outlines/刘嘉卓_outline.md`  
+- 采访大纲：生成于 `output/interview-outlines/`（该目录内容默认不纳入版本库）  
 - Show notes：`output/shownotes/EP21_Katie_Shownotes.md`  
 - 小红书文案：`output/xiaohongshu/EP21_xiaohongshu_all.md`  
 - 历史风格参考：`references/`  
