@@ -81,9 +81,11 @@ Synthesize all findings into a structured internal brief (shown to the user for 
 
 - **核心履历** — education, career timeline, key roles
 - **关键转折点** — career pivots, bold decisions, failures and comebacks
-- **反直觉观点/金句** — surprising quotes or contrarian takes
+- **嘉宾原话/金句** — quotes the guest said themselves (interviews, social media, talks). Mark each as "嘉宾本人说的" vs "媒体转述"
 - **与破壁圆桌的契合点** — how this guest connects to the podcast's themes (overseas Chinese experience, breaking barriers, career growth, tech, personal growth)
 - **空白区域** — things you couldn't find that might be worth asking about
+
+**Credibility filter:** Before including any detail, ask: "Is this something the guest themselves said or shared, or is it a journalist's paraphrase/embellishment?" Discard anything that looks like gossip, exaggeration, tabloid spin, or creative retelling by media. Prefer the guest's own words and verifiable facts (dates, awards, institutions). When in doubt, leave it out — it's better to ask the guest directly than to repeat something inaccurate.
 
 Present this brief to the user before proceeding.
 
@@ -117,20 +119,20 @@ Free text input.
 
 Free text input.
 
-### Step 5: Generate guest profile
+### Step 5: Generate guest profile (optional)
 
-Write the guest profile section. Read [style-guide.md](style-guide.md) for detailed rules.
+The guest profile is primarily a reference for the interviewer, not a script to read aloud. Ask the user whether to include it in the output. If the user wants a concise outline (just questions + opening), skip this section entirely.
 
-Structure:
+If included, read [style-guide.md](style-guide.md) for detailed rules. Structure:
 
 1. **核心标签** — 3-5 slash-separated identity keywords (e.g., "前亚马逊 L8 总监 / 硅谷高管教练 / 职场非职权影响力专家")
 
 2. **嘉宾亮点** — 3-4 bullet points, each with a bold sub-label:
    - Use specific numbers, names, and details
    - Highlight the contrast/surprise/story in each point
-   - End each point with the "so what" — why this matters for the conversation
+   - Only include facts you're confident are accurate — no journalist embellishments
 
-3. **金句** — One impactful quote from the guest's past interviews or social media (if available). If none found, skip this.
+3. **金句** — One impactful quote the guest themselves said (not journalist paraphrases). If none found, skip.
 
 4. **相关链接** — All links (personal website, LinkedIn, social media, past interviews)
 
@@ -144,27 +146,32 @@ Organize into 3-4 themed sections based on the user's chosen angles:
 
 **第一部分：破冰暖场**（2-4 questions）
 
-- Open with a specific, unexpected detail — NOT "请先介绍一下自己"
-- Use something from the guest's past interviews, social media, or bio as a conversation starter
-- The first question should make the guest smile or laugh
+- Start with "自我介绍" — let the guest settle in naturally
+- Follow with 1-2 simple, warm questions that ease into the conversation (current life, recent updates)
+- Then 1-2 questions that use a specific, intriguing detail to spark a story — but only details you trust are accurate
 - Include one question that lets the guest reveal personality (preferences, habits, hot takes)
 
 **第二至四部分：主题讨论**（3-6 questions each）
 
-For each themed section:
-- Lead with a "从A到B" narrative arc question that covers the guest's journey in that area
-- Follow with 2-3 specific drill-down questions referencing concrete details (numbers, quotes, incidents)
-- Include at least one "反直觉" question that challenges assumptions
+For each themed section, **mix two kinds of questions:**
+
+1. **Genuine, open questions** (~60%) — simple questions that help you truly understand the person. These don't need to reference any research. Examples: "你的偶像是谁？", "每天练多长时间？", "为什么选德国？", "什么时候开始独立创作的？". These questions work because the *answer* is specific to this guest, even if the question itself is universal.
+
+2. **Research-backed questions** (~40%) — questions that reference a specific, verified detail (a quote the guest said, an award they won, a known career decision). These show you did your homework, but use them sparingly and only when the detail is trustworthy.
+
+Additional guidance per section:
 - End each section with a forward-looking or reflective question
-- Every question must reference something specific about this guest — no generic questions that could be asked to anyone
+- At least one question per section should touch the guest's inner world (feelings, motivations, doubts) rather than just facts
 
 **Question writing rules:**
 
 1. Use conversational tone — write questions as you would actually say them out loud
-2. Quote the guest's own words when possible: "你说过'xxx'，这背后是什么故事？"
-3. Include context/setup before the question: "听说你在深圳第一天就被问..." then the question
-4. Mix question types: story prompts, opinion questions, hypotheticals, quick-fire
-5. Avoid multi-part questions with more than 2 sub-questions — split them up
+2. Keep simple questions simple. "你的吉他偶像是谁？" is a great question — don't add unnecessary preamble or research context to it
+3. When referencing research, prefer the guest's own words over journalist paraphrases. Only cite external details you're confident are accurate
+4. Add context/setup only for questions that need it: "听说你在深圳第一天就被问..." then the question
+5. Mix question types: story prompts, opinion questions, simple factual questions, hypotheticals, quick-fire
+6. Avoid multi-part questions with more than 2 sub-questions — split them up
+7. The test for every question: "Does this help me genuinely understand who this person is?" If it's just trivia or gossip, cut it
 
 #### Question count guide
 
@@ -216,6 +223,8 @@ Combine all sections into the output template format (see Output Template below)
 Output format: `.md` (Markdown). **Output directory: `output/interview-outlines/`** — always save the file into this folder relative to the workspace root.
 
 ```
+{如果用户要求包含嘉宾资料：}
+
 # 嘉宾资料
 
 **核心标签：** {slash-separated identity keywords}
@@ -229,6 +238,8 @@ Output format: `.md` (Markdown). **Output directory: `output/interview-outlines/
 {金句（如有）}
 
 {所有相关链接，每个一行}
+
+{如果用户不需要嘉宾资料，直接从采访大纲开始：}
 
 # 采访大纲
 
@@ -274,7 +285,7 @@ Output format: `.md` (Markdown). **Output directory: `output/interview-outlines/
 ```
 
 Formatting rules:
-- `# 嘉宾资料` and `# 采访大纲` are H1 headings
+- `# 嘉宾资料`（if included）and `# 采访大纲` are H1 headings
 - Section titles within 采访大纲 are bold: `**一、 暖场 + 访谈**`
 - Questions are numbered lists within each section
 - A blank line between each section
@@ -297,12 +308,25 @@ Formatting rules:
 - 赋能 / 破圈 / 硬核
 - 在...的道路上 / 在...的浪潮中
 
+### Banned question patterns — gossip & over-research
+
+- Treating unverified news details as fact: "听说你一怒之下从1楼弹到4楼" — unless the guest said this themselves
+- Referencing trivial anecdotes from tabloid-style articles to seem "well-researched"
+- Packing every question with researched details — this makes the outline read like a fact-check quiz, not a conversation
+- Quoting numbers or stories from third-party articles without verifying the guest actually said or confirmed them
+
 ### Replacement strategy
 
-Don't use vague qualifiers — use specific details instead:
+Bad questions come in two flavors. Fix each differently:
+
+**Type 1: Too vague** — add a concrete, verified detail:
 - Bad: "请分享一下您的创业经历" → Good: "你一个人跑到深圳，第一天就被问'你凭什么'——当时怎么想的？"
-- Bad: "您如何看待职业转型？" → Good: "法律系读了四年，'什么都忘了'——但你说不后悔，为什么？"
 - Bad: "请谈谈您的管理经验" → Good: "管过1000人的团队，到了你这个级别，最常被下属误解的是什么？"
+
+**Type 2: Too gossip-y / trivial** — replace with a genuine question:
+- Bad: "听说你逮着谁都问要不要听你弹琴，连收水电费的阿姨都不放过" → Good: "你的吉他偶像是谁？"
+- Bad: "你爸月薪100多块花了1100给你拉网线" → Good: "退学那个决定是你自己提出来的，还是爸爸的主意？"
+- Bad: "拿到冠军那天晚上第一个电话打给了谁？" → Good: "欧洲吉他奖冠军，这个奖项对你意味着什么？"
 
 For the complete style guide and more examples, see [style-guide.md](style-guide.md).
 
