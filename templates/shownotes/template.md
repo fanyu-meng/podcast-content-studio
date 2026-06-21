@@ -42,4 +42,8 @@ Lumi：临床医学博士，光学博士后，开发生物医学用的光学设�
 
 **『联系我们』**
 
+打破沉默，让你的故事也被听见。如果你有想分享的职场洞察或独特的人生选择，欢迎随时“破壁”。
+
 微信号：t-ransformer（备注：破壁圆桌 + 50字左右自我介绍）
+
+邮箱：[pobiyuanzhuo@gmail.com](mailto:pobiyuanzhuo@gmail.com)
