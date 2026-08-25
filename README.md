@@ -1,3 +1,5 @@
+
+
 # 播客内容生成器
 
 **仓库名：** `podcast-content-studio`（GitHub 仓库与本地克隆目录建议与此一致。）
@@ -109,7 +111,7 @@
 | **Claude Code** | 复制到 `.claude/skills/`（项目级）或 `~/.claude/skills/`（个人级） |
 | **Codex** | 手动复制到 `~/.codex/skills/` 下对应目录 |
 
-每个 skill 目录含 `SKILL.md`、`style-guide.md`、`examples.md`（部分 skill）。模板在 `templates/` 下按类型分目录。
+每个 skill 目录均含 `SKILL.md`、`style-guide.md` 与 `examples.md`。模板在 `templates/` 下按类型分目录。
 
 ## 项目结构
 
