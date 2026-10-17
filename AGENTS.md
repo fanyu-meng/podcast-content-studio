@@ -2,9 +2,9 @@
 
 When any of the following files are modified, you **must** also update `UNIVERSAL_PROMPT.md` in the project root to reflect the same changes:
 
-- `.cursor/skills/podcast-shownotes/SKILL.md`
-- `.cursor/skills/podcast-shownotes/style-guide.md`
-- `.cursor/skills/podcast-shownotes/examples.md`
+- `.agents/skills/podcast-shownotes/SKILL.md`
+- `.agents/skills/podcast-shownotes/style-guide.md`
+- `.agents/skills/podcast-shownotes/examples.md`
 - `templates/shownotes/template.md`
 
 ## How to sync
@@ -21,9 +21,9 @@ When any of the following files are modified, you **must** also update `UNIVERSA
 
 | Source file | UNIVERSAL_PROMPT.md section |
 |---|---|
-| `SKILL.md` Step 1-8 | 📋 工作流程 |
-| `style-guide.md` 标题/嘉宾/主要内容/时间戳 | Step 4-7 中的写作规则和示例对比 |
-| `style-guide.md` 禁用词汇 | 🚫 禁用词汇和表达 |
-| `style-guide.md` 双语处理 | 💡 双语处理 |
-| `examples.md` | 📚 完整示例 |
-| `template.md` | 📄 输出模板 |
+| `.agents/skills/podcast-shownotes/SKILL.md` Step 1-8 | 📋 工作流程 |
+| `.agents/skills/podcast-shownotes/style-guide.md` 标题/嘉宾/主要内容/时间戳 | Step 4-7 中的写作规则和示例对比 |
+| `.agents/skills/podcast-shownotes/style-guide.md` 禁用词汇 | 🚫 禁用词汇和表达 |
+| `.agents/skills/podcast-shownotes/style-guide.md` 双语处理 | 💡 双语处理 |
+| `.agents/skills/podcast-shownotes/examples.md` | 📚 完整示例 |
+| `templates/shownotes/template.md` | 📄 输出模板 |

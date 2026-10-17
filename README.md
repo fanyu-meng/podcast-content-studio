@@ -34,6 +34,7 @@
 - **主要内容** — 多种风格：新闻联播戏仿体、故事悬念体、直接吐槽体  
 - **时间戳** — 按话题整理，适合播客平台  
 - **人味写作** — 避免 AI 腔，多用具体事实、金句和主观感受  
+- **章节空行** — 每个 `**『xxx』**` 与内容之间、section 之间各空一行；生成后运行 `python3 scripts/format_shownotes.py output/shownotes/EP{N}_*_shownotes.md` 统一格式
 
 ### Skill 3: 小红书文案 (`xiaohongshu-copywriting`)
 
@@ -137,6 +138,8 @@
 │       ├── text-post.md
 │       ├── multi-angle.md
 │       └── carousel.md
+├── scripts/
+│   └── format_shownotes.py             # Show Notes 章节空行格式化
 ├── output/
 │   ├── interview-outlines/             # 采访大纲输出
 │   ├── shownotes/                      # Show Notes 输出
